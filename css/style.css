@@ -1,40 +1,55 @@
-body{
-    background-color:rgb(9, 20, 12);
+body {
+    background-color: #121a12;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     font-family: "Press Start 2P";
-
+    min-height: 0; 
+    height:0px;
+    cursor: url('../img/resized/skullcursor\ 3.png'), auto;
 }
+
 @import
 url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 
-header{
+
+
+header {
     text-align: center;
     background-color: #171F17;
-    margin: auto;
-    margin-top: 12.5%;
-    margin-bottom: 2%;
-    padding: 50px 0;
+    background-image: url(..//img/resized/background5-01.png);
+    margin: 0;
+    padding: 50px 0; /* Padding controls the height of the header */
     position: relative;
+    cursor: url('../img/resized/skullcursor\ 3.png'), auto;
 }
 
+section img {
+    display: block; 
+    margin: 0 auto; 
+    border: 30px solid rgb(1, 20, 7); 
+    cursor: url('../img/resized/skullcursor\ 3.png'), auto;
+}
 
-
-section img{
-    border: 5px rgb(21, 55, 21);
+section video {
+    display: block; 
+    margin: 0 auto; 
+    border: 30px solid rgb(1, 20, 7); 
+    cursor: url('../img/resized/skullcursor\ 3.png'), auto;
 }
 
 nav {
     display: flex;
     justify-content: space-around;  /* this aligns items horizontally with even spacing */
     align-items: center;  /* this will vertically center my items */
-    background-color: #202c20; 
+    background-color: #171F17;
     width: 100%;
     padding: 2%;
     top: 0;  /* this will position at the top of the page */
     left: 0;
     z-index: 1000;  /* and the zindex insures items stay above other content */ 
+    cursor: url('../img/resized/skullcursor\ 3.png'), auto;
 
 }
 
@@ -42,6 +57,9 @@ p{
     text-align: center;
     color:rgb(157, 204, 157);
     font-family:"Press Start 2P";
+    background-color: rgb(1, 20, 7);
+    padding: 20px;
+    cursor: url('../img/resized/skullcursor\ 3.png'), auto;
 }
 
 
@@ -51,26 +69,31 @@ h1{
     stroke: black;
     stroke-width: 6px;
     text-align: left;
+    cursor: url('../img/resized/skullcursor\ 3.png'), auto;
 }
 h2{
     text-align:center;
+    cursor: url('../img/resized/skullcursor\ 3.png'), auto;
 }
 
 main{
     max-width:65%;
     margin-left: 20%;
-    background-color:#233123;
-    border: 1px;
-
+    background-color:#171F17;
+    background-image: url(..//img/resized/background5-01.png);
+    border: 30px solid rgb(1, 20, 7); 
+    cursor: url('../img/resized/skullcursor\ 3.png'), auto;
 
 }
 
 footer h2{ 
     background-color:#171F17;
+
     text-align: right;
     width:15%;
     margin-left: 82%;
     padding:1%;
+    cursor: url('../img/resized/skullcursor\ 3.png'), auto;
 
 }
 
@@ -159,6 +182,10 @@ a{
     animation-timing-function: linear;
 }
     
+
+
+
+
 
 
 
