@@ -1,0 +1,164 @@
+body{
+    background-color:rgb(9, 20, 12);
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: "Press Start 2P";
+
+}
+@import
+url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+header{
+    text-align: center;
+    background-color: #171F17;
+    margin: auto;
+    margin-top: 12.5%;
+    margin-bottom: 2%;
+    padding: 50px 0;
+    position: relative;
+}
+
+
+
+section img{
+    border: 5px rgb(21, 55, 21);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;  /* this aligns items horizontally with even spacing */
+    align-items: center;  /* this will vertically center my items */
+    background-color: #202c20; 
+    width: 100%;
+    padding: 2%;
+    top: 0;  /* this will position at the top of the page */
+    left: 0;
+    z-index: 1000;  /* and the zindex insures items stay above other content */ 
+
+}
+
+p{
+    text-align: center;
+    color:rgb(157, 204, 157);
+    font-family:"Press Start 2P";
+}
+
+
+h1{
+    padding:0;
+    color:greenyellow;
+    stroke: black;
+    stroke-width: 6px;
+    text-align: left;
+}
+h2{
+    text-align:center;
+}
+
+main{
+    max-width:65%;
+    margin-left: 20%;
+    background-color:#233123;
+    border: 1px;
+
+
+}
+
+footer h2{ 
+    background-color:#171F17;
+    text-align: right;
+    width:15%;
+    margin-left: 82%;
+    padding:1%;
+
+}
+
+/*for my links*/
+a{
+    text-decoration: none;
+    color: greenyellow;
+}
+
+/*image container will help manage logo position and display*/
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.normal-image,
+.hover-image {
+    top: 0;
+    left: 0;
+}
+
+
+
+.hover-image {
+    display: none; /* this hides the hover image by default */
+}
+
+.image-container:hover .normal-image {
+    display: none; /* this hides normal image on hover */
+}
+
+.image-container:hover .hover-image {
+    display: block; /* this will show the hover image on hover */
+}
+
+
+.image-container:hover{
+    transform: scale(1.2);
+}
+
+.skull {
+    position:relative;
+    top: 0; /* Start from top of the footer */
+    left: -300px; /* Start off-screen */
+    animation-name: drift;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/*this key frame will be for drifting forward*/
+@keyframes drift{
+    from{
+        left:-1900px;
+        opacity: 50%;
+    }
+    to{
+        opacity: 5%;
+        left:2000px;
+
+
+    }
+
+
+
+}
+/*this key frame will be for drifting in reverse (top skulls)*/
+@keyframes driftReverse {
+    from {
+        left: 2000px; /* this will start the pngs off-screen to the right */
+        opacity: 50%;
+    }
+    to {
+        opacity: 5%;
+        left: -1900px; /*and this will move them to off-screen on the left */
+    }
+}
+
+.skulltop {
+    position: relative;
+    top: 0;
+    left: 2000px; 
+    animation-name: driftReverse;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+    
+
+
+
