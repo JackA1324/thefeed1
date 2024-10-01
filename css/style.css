@@ -200,10 +200,10 @@ a{
 
 /*gives my name list no spaces*/
 .side-nav {
-    position: fixed; 
-    top: 400px; 
-    left: 1690px; 
-    width: 200px; 
+    position:relative; 
+    top: 0px; 
+    left: 0px; 
+    width: 300px; 
     height: 50%; 
     background-color: #171F17; 
     padding: 0px 0; 
